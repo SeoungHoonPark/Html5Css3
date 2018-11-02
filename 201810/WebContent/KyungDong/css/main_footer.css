@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;}
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+#footer{
+	padding-top: 10px;
+	width: 960px;
+	height: auto;
+	margin: 0px auto;
+}
+#footer_top_container{
+	width: 960px;
+	height: 60px;
+	background: #eee;
+	border-top: 1px solid #b7b7b7;
+	border-bottom: 5px solid #7b7b7b;
+	overflow: hidden;
+}
+.global_network_list{
+	line-height: 60px;
+}
+.global_network_list a{
+	color: #4c4c4c;
+}
+.global_network_list li{
+	float: left;
+	font-size: 10px;
+	padding-left: 10px;
+	color: #b5b5b5;
+}
+.sns_list{
+	line-height: 60px;
+	margin-left: 30px;
+}
+.sns_list li:first-child{
+	margin-left: 50px;
+}
+.sns_list li{
+	float: left;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+#family_container{
+	float: right;
+	line-height: 60px;
+	margin-right: 20px;
+}
+#family_container select{
+	width: 130px;
+}
+#footer_bottom{
+	overflow:hidden;
+	width: 960px;
+	height: auto;
+	padding-top: 20px;
+}
+#footer_bottom_left{
+	float: left;
+	display:block;
+	width: 880px;
+	height: auto;
+}
+.bottom_icon_list{
+	width: auto;
+	height: 40px;
+	margin-bottom: 20px;
+}
+.bottom_icon_list li{
+	float:left;
+	width:auto;
+	height:40px;
+}
+.bottom_icon_list li:nth-child(2n){
+	width:75px;
+	padding-left: 10px;
+	font-size: 7px;
+}
+.bottom_icon_list li:nth-child(13){
+	padding-left: 25px;
+}
+#footer_bottom_logo{
+	float:left;
+	width:151px;
+	height:30px;
+	background-image: url("/201810/KyungDong/images/mainPage/footer_logo.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	margin-right: 20px;
+}
+.addr_top_list {
+	float:left;
+	width: auto;
+}
+.addr_top_list li{
+	float: left;
+	font-size: 7px;
+}
+.addr_top_list li:nth-child(2n){
+	padding: 0px 10px 0px 10px;
+}
+.addr_bottom_list {
+	float:left;
+	width: auto;
+}
+.addr_bottom_list li{
+	float: left;
+	font-size: 7px;
+}
+.addr_bottom_list li:nth-child(2n){
+	padding: 0px 10px 0px 10px;
+}
+#qr_code{
+	float: right;
+	width: 76px;
+	height: 74px;
+	display: block;
+	background-image: url("/201810/KyungDong/images/mainPage/footer_qrcode.png");
+}
+
+
+
+
+
+
+
+

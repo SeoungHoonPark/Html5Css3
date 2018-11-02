@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;}
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+#content{
+	overflow:hidden;
+	margin: 0px auto;
+	width: 960px;
+	height: auto;
+}
+#product_container{
+	overflow:hidden;
+	margin-top: 30px;
+	width: 960px;
+	height: auto;;	
+}
+#product_viewer{
+	width: 960px;
+	height: 160px;
+}
+.view_list{
+	width: 960px;
+/* 	line-height: 160px; */	
+}
+.view_list li{
+	float: left;
+	width:auto;
+	height: 160px;
+}
+.view_list li:nth-child(2) {
+	width: 275px;
+	height: 160px;
+}
+.view_list li:nth-child(2) img:nth-child(2){
+	margin-top:-4px;
+}
+.product_list{
+	overflow:hidden;
+	width: 960px;
+	height: 55px;
+	display:block;
+	background: #363535;
+	color: white;
+}
+.product_list li{
+	float:left;
+	line-height: 50px;
+	padding-top:2px;
+	width: 120px;
+	text-align: center;
+}
+.product_list li a{
+	color: white;
+	display: block;
+	text-align: center;
+}
+.product_list li a:hover{
+	background: white;
+	display: block;
+	color: #f97b0b;
+	border-radius: 3px;
+}
+.product_list li:first-child {
+	width: 230px;
+}
+#service_container{
+	overflow: hidden;
+	width: 960px;
+	height: 714px;
+	display: block;
+	border: 1px solid black;
+}
+.service_list{
+	width: 960px;
+}
+.service_list li:nth-child(1) div{
+	width: 320px;
+	height: 240px;
+	margin:20px 0px 20px 0px;
+	border-bottom:1px solid #e7e7e7;
+	padding: 
+}
+.service_list_row_1{
+	width:320px;
+	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_40.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.service_list li:nth-child(2) div{
+	width: 320px;
+	height: auto;
+	margin:20px 0px 20px 0px;
+	border: 1px solid black;
+}
+.service_list li:nth-child(3) div{
+	width: 320px;
+	height: auto;
+	margin:20px 0px 20px 0px;
+	border: 1px solid black;
+}
+.service_list li div{
+	float: left;
+}
+
+
+
+
+
+
+
+

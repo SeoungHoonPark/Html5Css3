@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* 공통적 적용 */
+*{margin: 0px;padding: 0px; list-style: none; box-sizing: border-box;}
+body{
+	background: #d6d6d6;
+	background-image: url("/201810/GUMZZI/images/topbg.jpg");
+	background-repeat: repeat-x;
+}
+a{text-decoration: none;font-weight: bold;color:black;}
+a:hover{text-decoration: underline;color: #c2955e;}
+#container{
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+}
+/* 헤더부분 적용 */
+#header{
+	width: 900px;
+	height: 102px;
+}
+#logo{
+	float: left;
+	width:233px;
+	height: 35px;
+	text-indent: -9999px;
+	background-image: url("/201810/GUMZZI/images/logo.jpg");
+	background-repeat: no-repeat;
+	margin-top: 40px;
+}
+#menu_container{
+	float: right;
+	width:550px; 
+	height: 50px;
+	margin-top: 40px;
+}
+.menu_list{
+	width:550px;
+	line-height: 50px;
+}
+.menu_list li{
+	display: inline-block;
+	width: 105px;
+	text-align: right;
+}
+/* 콘텐츠부분 적용 */
+#content{
+	clear:both;
+	width: 900px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid #333;
+	margin-top: 10px;
+}
+#mainBg_container{
+	width: 900px;
+	height: 414px;
+}
+#banner_container{
+	margin-top: 10px;
+	width:900px;
+	height: 127px;
+	background: #f8c465;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 10px;
+}
+.ban_list{
+	width: 900px;
+	height:127px;
+	display: inline-block;
+}
+.ban_list li{
+	float:left;
+	width: 300px;
+}
+.type_style1{
+	position: relative;
+	top:-100px;
+	left: 135px;
+	font-size: small;
+}
+.type_style2{
+	position: relative;
+	top: -100px;
+	left: 140px;
+	font-size: small;
+}
+.type_style3{
+	position: relative;
+	top: -100px;
+	left: 145px;
+	font-size: small;
+}
+#footer{
+	width: 900px;
+	height: 80px;
+	background: #000;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+}
+#footer ul li {
+	font-size: small;
+}
