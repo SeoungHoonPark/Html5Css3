@@ -115,7 +115,7 @@ a{
 }
 .service_list_row_1_col_1{
 	float:left;
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_40.png");
+	background-image: url("../images/mainPage/middle_img_icon_40.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 290px;
@@ -130,7 +130,7 @@ a{
 }
 .service_list_row_1_col_2{
 	float: left;	
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_43.png");
+	background-image: url("../images/mainPage/middle_img_icon_43.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 290px;
@@ -145,7 +145,7 @@ a{
 }
 .service_list_row_1_col_3{
 	float: left;	
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_46.png");
+	background-image: url("../images/mainPage/middle_img_icon_46.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 300px;
@@ -157,7 +157,7 @@ a{
 	line-height: 30px;
 }
 .service_list_row_1_col_3 > .green_dot{
-	background-image: url("/201810/KyungDong/images/mainPage/green_dot.png");	
+	background-image: url("../images/mainPage/green_dot.png");	
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 10px;
@@ -171,7 +171,7 @@ a{
 }
 .service_list_row_2_col_1{
 	float: left;
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_62.png");
+	background-image: url("../images/mainPage/middle_img_icon_62.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 290px;
@@ -186,7 +186,7 @@ a{
 }
 .service_list_row_2_col_2{
 	float: left;	
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_60.png");
+	background-image: url("../images/mainPage/middle_img_icon_60.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 290px;
@@ -201,7 +201,7 @@ a{
 }
 .service_list_row_2_col_3{
 	float: left;	
-	background-image: url("/201810/KyungDong/images/mainPage/middle_img_icon_64.png");
+	background-image: url("../images/mainPage/middle_img_icon_64.png");
 	background-repeat: no-repeat;
 	background-position: top right;
 	width: 300px;
@@ -235,14 +235,14 @@ a{
 .on_star{
 	width:14px;
 	height:12px;
-	background-image: url("/201810/KyungDong/images/mainPage/start_icon_on.png");
+	background-image: url("../images/mainPage/start_icon_on.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .off_star{
 	width:14px;
 	height:12px;
-	background-image: url("/201810/KyungDong/images/mainPage/start_icon_off.png");
+	background-image: url("../images/mainPage/start_icon_off.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -264,16 +264,24 @@ a{
 }
 .service_list_row_3_col_2 > .review_coment{
 	clear: both;
-	border: 1px solid red;
 }
-
-
-
-
-
-
-
-
+.review_coment > img {
+	margin-top: 20px;
+	padding-right: 10px;
+	float: left;
+}
+.review_coment > .title{
+	float: left;
+	margin-top: 20px;
+	font-size: 12px;
+	width: 190px;
+}
+.review_coment > .contents{
+	float: left;
+	margin-top: 5px;
+	font-size: 12px;
+	width: 190px;
+}
 .service_list_row_3_col_3{
 	float: left;
 	width: 300px;

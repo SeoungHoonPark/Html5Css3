@@ -2,17 +2,17 @@
 *{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;}
 ::-webkit-input-placeholder {
 	color:white;
-    font-size: 10px;
+    font-size: 8px;
     text-indent: 10px;
 }
 ::-ms-input-placeholder{
-	color: red;
-    font-size: 10px;
+	color: white;
+    font-size: 8px;
     text-indent: 10px;
 }
 ::placeholder {
     color: white;
-    font-size: 10px;
+    font-size: 8px;
     text-indent: 10px;
 }
 a{
@@ -33,7 +33,7 @@ a{
 #logo{
 	float:left;
 	text-indent: -9999px;
-	background-image: url("/201810/KyungDong/images/mainPage/kyungDong_logo.png");
+	background-image: url("../images/mainPage/kyungDong_logo.png");
 	background-repeat: no-repeat;
 	width: 230px;
 	height: 60px;
@@ -63,6 +63,26 @@ a{
 	height: 24px;
 	padding-right: 5px;
 }
+.login_list > .login{
+	background:url("../images/mainPage/top_public_login.png") no-repeat left;
+	padding: 0px 10px 0px 15px;
+	line-height: 20px;
+}
+.login_list > .orange_dot{
+	background:url("../images/mainPage/top_public_dot.png") no-repeat left;
+	padding: 0px 10px 0px 15px;
+	line-height: 20px;
+}
+.login_list > .partner{
+	background:url("../images/mainPage/top_public_partner.png") no-repeat left;
+	padding: 0px 10px 0px 20px;
+	line-height: 20px;
+}
+.login_list > .language{
+	background:url("../images/mainPage/top_public_language.png") no-repeat left;
+	padding: 0px 10px 0px 20px;
+	line-height: 20px;
+}
 #recruit_container{
 	float: right;
 	width: auto;
@@ -83,17 +103,19 @@ a{
 }
 .recruit_list li:first-child {
 	border: 1px solid #d4d4d4;
-	padding: 2px 2px 2px 2px;
-	border-radius: 2px;
-	color: #f68b1f;
-	line-height: 24px;
+	padding-left: 5px;
+	padding-right: 7px; 
+	border-radius: 3px;
+	color: #f97b0b;
+	line-height: 20px;
 }
 .recruit_list img{
-	margin-left: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
 }
 .recruit_list select{
 	height: 25px;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 #menu_container{
 	clear: both;
@@ -114,19 +136,16 @@ a{
 #search_container{
 	float: right;
 	height: 24px;
-	background: #f68b1f;
+	background: #f97b0b;
 }
 #search_container input{
 	width: 190px;
 	height: 24px;
-	line-height: 24px;
-	background: #f68b1f;
+	background: #f97b0b;
 	border-style: none;
-	font
-	
+	vertical-align: middle;
 }
 #search_container img{
-	width: 20px;
-	height: 20px;
-	line-height: 24px;
+	margin-right: 5px;
+	vertical-align: middle;
 }

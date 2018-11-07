@@ -84,7 +84,7 @@ a{
 	float:left;
 	width:151px;
 	height:30px;
-	background-image: url("/201810/KyungDong/images/mainPage/footer_logo.png");
+	background-image: url("../images/mainPage/footer_logo.png");
 	background-repeat:no-repeat;
 	background-position:center;
 	margin-right: 20px;
@@ -116,7 +116,7 @@ a{
 	width: 76px;
 	height: 74px;
 	display: block;
-	background-image: url("/201810/KyungDong/images/mainPage/footer_qrcode.png");
+	background-image: url("../images/mainPage/footer_qrcode.png");
 }
 
 
