@@ -211,6 +211,7 @@ a{
 	color:#969696;
 }
 .process_list{
+	margin: 0px auto;
 	width: 720px;
 	height: 80px;
 }
