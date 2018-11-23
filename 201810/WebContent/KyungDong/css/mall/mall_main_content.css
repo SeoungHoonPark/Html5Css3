@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;}
+a{text-decoration: none; font-weight: bold;}
+#content{
+	overflow: hidden;
+	width: 960px;
+	height: auto;	
+	margin-top: 45px;
+}
+#content{
+	overflow: hidden;
+	width: 960px;
+	height: auto;	
+	margin-top: 45px;
+}
+#site_path_container{
+	overflow: hidden;
+	width: 960px;
+	height: 30px;
+	padding-bottom: 40px;
+	margin-bottom:50px;
+	border-bottom: 1px solid #969696;
+}
+.site_path_list{
+	float: left;
+	width: 960px;
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #696969;
+}
+.site_path_list li{
+	float: left;
+	width: auto;
+	margin-right:10px;
+}
+#product_intro_container{
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+}
+#headerText_container{
+	width: 960px;
+	height: auto;
+}
+#headerText_container h1{
+	float: left;
+	margin: 0px 10px 20px 0px;
+	color: #696969;
+}
+#headerText_container h6{
+	padding-top: 25px;
+	color: #696969;
+}
+#intro_img{
+	width: 960px;
+	height: 387px;
+}
+#selection_container{
+	width: 960px;
+	height: 54px;
+	background: #a29f9b;
+}
+.select_list{
+	width:auto;
+	height: 54px;
+	margin-left: 50px;
+}
+.select_list li{
+	float: left;
+	width: 160px;
+	height:27px;
+	line-height: 54px;
+	margin-right: 10px;
+	text-align: center;
+}
+.select_list li > select{
+	width: 160px;
+	height: 27px;
+	color: #888;
+	border: 0px;
+	background-image: url("../../images/mallPage/down_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	-ms-box-shadow:none !important;
+    
+    appearance: none;
+    -o-appearance: none;
+	-webkit-appearance: none;
+    -ms-appearance: none;
+}
+.select_list li > select::-ms-expand{
+	display: none;
+} 
+.select_list li:nth-child(1){
+	font-weight: bold;
+	color: white;
+	width: auto;
+}
+.select_list li:nth-child(6){
+	width: 98px;
+}
+.select_list li:nth-child(6) img{
+	vertical-align: middle;
+}
+#mall_middle_container{
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 40px;
+}
+/* 좌측 사이드바 영역 */
+#middle_sidebar_container{
+	float: left;
+	border: 1px solid #555;
+	width: 200px;
+	height: 1047px;
+}
+
+#product_list_container{
+	float: left;
+	margin-left: 40px;
+	border: 1px solid red;
+	width: 720px;
+	height: 1047px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
