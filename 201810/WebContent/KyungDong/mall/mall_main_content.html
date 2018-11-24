@@ -66,14 +66,109 @@
 				<div id="middle_sidebar_container">
 					<img alt="내개맞는 보일러 찾기" src="../images/mallPage/sidebar_header.png">
 					
-					<button>가스보일러</button>
-					<button>기름보일러</button>
+					<div id="tab_btn">
+						<img alt="가스보일러" src="../images/mallPage/gas_on_btn.png"><img alt="기름보일러" src="../images/mallPage/oil_off_btn.png">
+					</div>
 					
+					<div id="gas_tab">
+						<div id="gas_in_1">
+							<h5>보일러 구분</h5>
+							<input type="checkbox"  name="gubun" id="voiler_condansing">
+							<label for="voiler_condansing"> 콘덴싱	<span>(에너지효율1등급)</span></label>
+							<input type="checkbox" name="gubun" id="voiler_normal"> 
+							<label for="voiler_normal">일반</label>
+						</div><!-- gas_in_1 -->
+						
+						<div id="gas_in_2">
+							<h5>용량 선택</h5>
+							<ul class="amount">
+								<li>
+										<input type="radio" name="a" id="amount_area">
+										<label for="amount_area"> 난방면적 기준</label>
+										<ul class="nanbang">
+											<li>
+												<input type="radio" name="nanbang_list" id="area_1"> 
+												<label for="area_1">66M<sup>2</sup> (8~20평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_2"> 
+												<label for="area_2">106M<sup>2</sup> (32평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_3">
+												<label for="area_3">165M<sup>2</sup> (50평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_4">
+												<label for="area_4">231M<sup>2</sup> (70평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_5">
+												<label for="area_5"> 86M<sup>2</sup> (26평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_6">
+												<label for="area_6">132M<sup>2</sup> (40평)</label>
+											</li>
+											<li>
+												<input type="radio" name="nanbang_list" id="area_7">
+												<label for="area_7">198M<sup>2</sup> (60평)</label>
+											</li>
+										</ul>
+								</li>
+								<li>
+									<input type="radio" name="a" id="amount_use">
+									<label for="amount_use"> 온수사용량 기준(동절기)</label>
+								</li>
+							</ul><!-- class=amount -->
+						</div><!-- gas_in_2 -->
+						<div id="gas_in_3">
+						<h5>설치위치</h5>
+							<ul class="position">
+								<li>
+									<input type="radio" name="position" id="position_up">
+									<label for="position_up"><img alt="대기개방식" src="../images/mallPage/into_up_house.png">
+										<span>대기개방식</span>(난방배관과 동일층 설치)</label>
+								</li>
+								<li>
+									<input type="radio" name="position" id="position_down">
+									<label for="position_down"><img alt="대기차단식" src="../images/mallPage/into_down_house.png">
+										<span>대기차단식</span>(난방배관보다 아래층 설치)</label>
+								</li>
+							</ul>
+						</div><!-- gas_in_3 -->
+						
+						<div id="gas_in_4">
+						<h5>온수온도</h5>
+							<ul class="temperature">
+								<li>
+									<input type="checkbox" id="t_0.5c">
+									<label for="t_0.5c"> 0.5&deg;c</label>
+								</li>
+								<li>
+									<input type="checkbox" id="t_1c">
+									<label for="t_1c">1&deg;c</label>
+								</li>
+								<li>
+									<input type="checkbox"  id="step_3">
+									<label for="step_3">3단계</label>
+								</li>								
+							</ul>
+						</div><!-- gas_in_4 -->
+					</div><!-- gas_tab -->
+					
+					<!-- 차후 기름보일러 탭에 해당하는 영역 -->
+					<div id="oil_tab">
+					</div><!-- oil_tab -->
+					
+					<img alt="보일러 찾기" src="../images/mallPage/voiler_search_btn.png">
+					<img alt="다시 선택하기" src="../images/mallPage/re_check_btn.png">
+						
 				</div><!-- middle_sidebar_container end-->
+					
 				<div id="product_list_container">
 					<h1>상품리스트 영역</h1>
 				</div><!-- product_list_container -->
-				
 				
 			
 			</div><!-- mall_middle_container -->

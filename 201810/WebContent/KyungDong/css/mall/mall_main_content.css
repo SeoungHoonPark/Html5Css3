@@ -1,7 +1,45 @@
 @charset "UTF-8";
 
-*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;}
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;color: #454545;}
 a{text-decoration: none; font-weight: bold;}
+
+/* mall 공통 checkbox / radio */
+input[type=checkbox]:not(old){
+	opacity:0;
+	background:url(../../images/mallPage/checkbox_in_checked.png) no-repeat 0 0;
+	width: 0;
+}
+input[type=checkbox]:not(old) + label {
+	display: block;
+	text-align: left; 
+/* 	height: 20px;  */
+	padding-left: 18px;
+	background: url("../../images/mallPage/checkbox.png") no-repeat 0 0;
+/* 	line-height: 130%; */ 
+	vertical-align: center;
+}
+input[type=checkbox]:not(old):checked + label {
+	background: url("../../images/mallPage/checkbox_in_checked.png") no-repeat 0 0;
+}
+
+input[type=radio]:not(old){
+	opacity:0;
+	background:url(../../images/mallPage/radiobutton_on.png) no-repeat 0 0;
+	width: 0;
+}
+input[type=radio]:not(old) + label {
+	display: block;
+	text-align: left; 
+	height: 20px; 
+	padding-left: 18px;
+	background: url("../../images/mallPage/radiobutton_off.png") no-repeat 0 0;
+	line-height: 130%; 
+	vertical-align: center;
+}
+input[type=radio]:not(old):checked + label {
+	background: url("../../images/mallPage/radiobutton_on.png") no-repeat 0 0;
+}
+/* mall 공통 checkbox / radio 끝 */
 #content{
 	overflow: hidden;
 	width: 960px;
@@ -117,11 +155,93 @@ a{text-decoration: none; font-weight: bold;}
 /* 좌측 사이드바 영역 */
 #middle_sidebar_container{
 	float: left;
-	border: 1px solid #555;
+	background-color: #f9f9f9;
+	border: 1px solid #c0c0c0;
 	width: 200px;
 	height: 1047px;
 }
-
+#tab_btn{
+	overflow:hidden;
+	display: block;
+	margin-top: 20px;
+	width: 200px;
+	height: 34px;
+	padding: 0px;
+	text-align: center;	
+}
+#tab_btn img{	
+	vertical-align: top;
+	margin-left: 0px;
+}
+#gas_tab{
+	overflow: hidden;
+	width: 160px;
+	height: auto;
+}
+#gas_in_1{
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px dashed #c0c0c0;
+	padding-bottom: 20px;	
+}
+#gas_in_1 label span{
+	display:block;
+	font-size: 10px;
+	line-height: 12px;
+	color: #777;
+}
+#gas_in_2{
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px dashed #c0c0c0;
+	padding-bottom: 20px;
+	font-size: 12px;
+}
+#gas_in_2 ul li ul.nanbang{
+	margin-top: 10px;
+	width: 160px;
+	height: auto;
+	background-color: #ededed;
+	border: 1px solid #c0c0c0; 
+	padding-left: 18px;
+}
+#gas_in_2 ul li ul.nanbang li{
+	font-size: 10px;
+	/* height: 20px;  layout 찌그러짐 */
+}
+#gas_in_2 ul li ul.nanbang li sup{
+	border: 1px solid red;
+}
+#gas_in_3{
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px dashed #c0c0c0;
+	padding-bottom: 20px;
+}
+#gas_in_3 ul.position{
+	overflow: hidden;
+	width: 160px;
+	height: 90px;
+	font-size: 9px;
+}
+#gas_in_3 ul.position li{
+	float: left;
+	width: 50%;
+	height: 90px;
+	border: 1px solid red;
+}
+#gas_in_3 ul.position li span{
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+}
+#gas_in_4{
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px dashed #c0c0c0;
+	padding-bottom: 20px;
+}
+/* 우측 상품리스트 영역 */
 #product_list_container{
 	float: left;
 	margin-left: 40px;
@@ -129,11 +249,6 @@ a{text-decoration: none; font-weight: bold;}
 	width: 720px;
 	height: 1047px;
 }
-
-
-
-
-
 
 
 
