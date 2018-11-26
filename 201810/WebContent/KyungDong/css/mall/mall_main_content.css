@@ -9,8 +9,7 @@ input[type=checkbox]:not(old){
 	background:url(../../images/mallPage/checkbox_in_checked.png) no-repeat 0 0;
 	width: 0;
 }
-input[type=checkbox]:not(old) + label {
-	display: block;
+input[type=checkbox]:not(old) + label {	display: block;
 	text-align: left; 
 /* 	height: 20px;  */
 	padding-left: 18px;
@@ -28,12 +27,11 @@ input[type=radio]:not(old){
 	width: 0;
 }
 input[type=radio]:not(old) + label {
-	display: block;
 	text-align: left; 
-	height: 20px; 
+	height: 25px; 
 	padding-left: 18px;
 	background: url("../../images/mallPage/radiobutton_off.png") no-repeat 0 0;
-	line-height: 130%; 
+	/* line-height: 130%; */ 
 	vertical-align: center;
 }
 input[type=radio]:not(old):checked + label {
@@ -197,6 +195,9 @@ input[type=radio]:not(old):checked + label {
 	padding-bottom: 20px;
 	font-size: 12px;
 }
+#gas_in_2 ul.amount > li {
+	padding-top: 10px;
+}
 #gas_in_2 ul li ul.nanbang{
 	margin-top: 10px;
 	width: 160px;
@@ -207,10 +208,12 @@ input[type=radio]:not(old):checked + label {
 }
 #gas_in_2 ul li ul.nanbang li{
 	font-size: 10px;
-	/* height: 20px;  layout 찌그러짐 */
+	height: 25px;
+}
+#gas_in_2 ul li ul.nanbang li:hover{
+	
 }
 #gas_in_2 ul li ul.nanbang li sup{
-	border: 1px solid red;
 }
 #gas_in_3{
 	display: block;
@@ -228,7 +231,6 @@ input[type=radio]:not(old):checked + label {
 	float: left;
 	width: 50%;
 	height: 90px;
-	border: 1px solid red;
 }
 #gas_in_3 ul.position li span{
 	display: block;
