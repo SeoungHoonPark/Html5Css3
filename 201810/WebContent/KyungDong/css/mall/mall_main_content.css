@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;color: #454545;}
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;color: #454545;font-family: 'Nanum Gothic', serif;}
 a{text-decoration: none; font-weight: bold;}
 
 /* mall 공통 checkbox / radio */
@@ -9,12 +10,12 @@ input[type=checkbox]:not(old){
 	background:url(../../images/mallPage/checkbox_in_checked.png) no-repeat 0 0;
 	width: 0;
 }
-input[type=checkbox]:not(old) + label {	display: block;
+input[type=checkbox]:not(old) + label {
 	text-align: left; 
-/* 	height: 20px;  */
+	height: 20px; 
 	padding-left: 18px;
 	background: url("../../images/mallPage/checkbox.png") no-repeat 0 0;
-/* 	line-height: 130%; */ 
+	line-height: 130%; 
 	vertical-align: center;
 }
 input[type=checkbox]:not(old):checked + label {
@@ -28,10 +29,10 @@ input[type=radio]:not(old){
 }
 input[type=radio]:not(old) + label {
 	text-align: left; 
-	height: 25px; 
+	height: 20px; 
 	padding-left: 18px;
 	background: url("../../images/mallPage/radiobutton_off.png") no-repeat 0 0;
-	/* line-height: 130%; */ 
+	line-height: 130%; 
 	vertical-align: center;
 }
 input[type=radio]:not(old):checked + label {
@@ -187,6 +188,8 @@ input[type=radio]:not(old):checked + label {
 	font-size: 10px;
 	line-height: 12px;
 	color: #777;
+	padding-left: 20px;
+	margin-bottom: 10px;
 }
 #gas_in_2{
 	display: block;
@@ -195,25 +198,21 @@ input[type=radio]:not(old):checked + label {
 	padding-bottom: 20px;
 	font-size: 12px;
 }
-#gas_in_2 ul.amount > li {
-	padding-top: 10px;
-}
 #gas_in_2 ul li ul.nanbang{
 	margin-top: 10px;
+	margin-bottom: 10px;
 	width: 160px;
 	height: auto;
 	background-color: #ededed;
-	border: 1px solid #c0c0c0; 
-	padding-left: 18px;
+	border: 1px solid #c0c0c0;
+	padding: 15px;
 }
 #gas_in_2 ul li ul.nanbang li{
 	font-size: 10px;
-	height: 25px;
-}
-#gas_in_2 ul li ul.nanbang li:hover{
-	
+	height: 20px;
 }
 #gas_in_2 ul li ul.nanbang li sup{
+	font-size: 5px;
 }
 #gas_in_3{
 	display: block;
@@ -226,14 +225,21 @@ input[type=radio]:not(old):checked + label {
 	width: 160px;
 	height: 90px;
 	font-size: 9px;
+	margin-top: 10px; 
 }
 #gas_in_3 ul.position li{
 	float: left;
 	width: 50%;
 	height: 90px;
 }
+#gas_in_3 ul.position li input{
+	border: 1px solid blue;	
+}
+#gas_in_3 ul.position li img{
+	padding-right: 10px;
+	border: 1px solid red;
+}
 #gas_in_3 ul.position li span{
-	display: block;
 	font-size: 10px;
 	font-weight: bold;
 }
@@ -243,6 +249,7 @@ input[type=radio]:not(old):checked + label {
 	border-bottom: 1px dashed #c0c0c0;
 	padding-bottom: 20px;
 }
+
 /* 우측 상품리스트 영역 */
 #product_list_container{
 	float: left;
@@ -251,24 +258,3 @@ input[type=radio]:not(old):checked + label {
 	width: 720px;
 	height: 1047px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
