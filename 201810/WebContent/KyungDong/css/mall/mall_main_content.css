@@ -18,11 +18,11 @@ input[type=checkbox]:not(old){
 }
 input[type=checkbox]:not(old) + label {
 	text-align: left; 
-	height: 20px; 
+	/* height: 20px; */ 
 	padding-left: 18px;
 	background: url("../../images/mallPage/checkbox.png") no-repeat 0 0;
-	line-height: 130%; 
-	vertical-align: center;
+	/* line-height: 130%; */
+	vertical-align: text-bottom;
 }
 input[type=checkbox]:not(old):checked + label {
 	background: url("../../images/mallPage/checkbox_in_checked.png") no-repeat 0 0;
@@ -35,11 +35,12 @@ input[type=radio]:not(old){
 }
 input[type=radio]:not(old) + label {
 	text-align: left; 
-	height: 20px; 
+	/* height: 20px; */ 
 	padding-left: 18px;
 	background: url("../../images/mallPage/radiobutton_off.png") no-repeat 0 0;
-	line-height: 130%; 
+	/* line-height: 130%; */ 
 	vertical-align: center;
+	
 }
 input[type=radio]:not(old):checked + label {
 	background: url("../../images/mallPage/radiobutton_on.png") no-repeat 0 0;
@@ -50,6 +51,7 @@ input[type=radio]:not(old):checked + label {
 	width: 960px;
 	height: auto;	
 	margin-top: 45px;
+	margin-bottom:200px;
 }
 #content{
 	overflow: hidden;
@@ -338,6 +340,11 @@ input[type=radio]:not(old):checked + label {
 }
 #product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#check_btn {
 	margin-bottom: 15px;
+	height: 23px;
+}
+#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#check_btn .chk_text{
+	font-size: 12px;
+	height: 23px;
 }
 #product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_img {
 	width: 180px;
@@ -348,6 +355,7 @@ input[type=radio]:not(old):checked + label {
 }
 #product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info { 	
 	text-align: center;
+	font-size: 12px;
 }
 #product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info ul.info_list {
 	width: auto;
@@ -375,10 +383,21 @@ input[type=radio]:not(old):checked + label {
 	text-align: center;
 	margin-left: 5%;
 }
+/* 클래스 nowPage에 대한 스타일 */
+#paging_container > ul.paging_list li.nowPage {
+	color: #f97b0b;
+}
+#paging_container > ul.paging_list li.boundary_left{
+	margin-right: 10px;
+}
+#paging_container > ul.paging_list li.boundary_right{
+	margin-left: 10px;
+}
 #paging_container > ul.paging_list li{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 14px;
+	font-size: 10px;
+	color: #929292;
 }
 #paging_container > ul.paging_list li img{
 	vertical-align: middle;
@@ -386,7 +405,12 @@ input[type=radio]:not(old):checked + label {
 #paging_container > .totalPage{
 	float: right;
 	width: 5%;
+	font-size: 14px;
+	font-weight: bold;
+	color: #929292;
 }
+/* 클래스 nowPage에 대한 스타일 */
 #paging_container .nowPage{
+	font-size: 14px;
 	color: #f97b0b;
 }
