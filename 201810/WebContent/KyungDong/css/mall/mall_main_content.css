@@ -1,15 +1,9 @@
 @charset "UTF-8";
-@font-face{
-	font-family: 'Daum_Regular';
-	src: local('Daum_Regular'), 
-		url('../../font/Daum_Regular.otf') format('opentruefype'),
-		url('../../font/Daum_Regular.ttf') format('truetype');
-}
-*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;color: #454545;}
-a{text-decoration: none; color: inherit; line-height: inherit;}
-body{
-	font-family: 'Daum_Reqular', sans-serif;
-}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;margin: 0px auto;color: #454545;font-family: 'Nanum Gothic', serif;}
+a{text-decoration: none; font-weight: bold;}
+
 /* mall 공통 checkbox / radio */
 input[type=checkbox]:not(old){
 	opacity:0;
@@ -18,11 +12,11 @@ input[type=checkbox]:not(old){
 }
 input[type=checkbox]:not(old) + label {
 	text-align: left; 
-	/* height: 20px; */ 
+	height: 20px; 
 	padding-left: 18px;
 	background: url("../../images/mallPage/checkbox.png") no-repeat 0 0;
-	/* line-height: 130%; */
-	vertical-align: text-bottom;
+	line-height: 130%; 
+	vertical-align: center;
 }
 input[type=checkbox]:not(old):checked + label {
 	background: url("../../images/mallPage/checkbox_in_checked.png") no-repeat 0 0;
@@ -35,12 +29,11 @@ input[type=radio]:not(old){
 }
 input[type=radio]:not(old) + label {
 	text-align: left; 
-	/* height: 20px; */ 
+	height: 20px; 
 	padding-left: 18px;
 	background: url("../../images/mallPage/radiobutton_off.png") no-repeat 0 0;
-	/* line-height: 130%; */ 
+	line-height: 130%; 
 	vertical-align: center;
-	
 }
 input[type=radio]:not(old):checked + label {
 	background: url("../../images/mallPage/radiobutton_on.png") no-repeat 0 0;
@@ -51,7 +44,6 @@ input[type=radio]:not(old):checked + label {
 	width: 960px;
 	height: auto;	
 	margin-top: 45px;
-	margin-bottom:200px;
 }
 #content{
 	overflow: hidden;
@@ -224,184 +216,45 @@ input[type=radio]:not(old):checked + label {
 }
 #gas_in_3{
 	display: block;
-	margin-top: 10px;
+	margin-top: 20px;
 	border-bottom: 1px dashed #c0c0c0;
 	padding-bottom: 20px;
 }
 #gas_in_3 ul.position{
+	overflow: hidden;
 	width: 160px;
 	height: 90px;
 	font-size: 9px;
+	margin-top: 10px; 
 }
 #gas_in_3 ul.position li{
 	float: left;
+	width: 50%;
 	height: 90px;
 }
-#gas_in_3 ul.position li:nth-child(1){
-	width: 70px;
-	margin-right: 10px;
-}
-#gas_in_3 ul.position li:nth-child(2){
-	width: 80px;
-}
-#gas_in_3 ul.position li label{
-	display: table-cell;
-	height: 90px;
-	vertical-align: top;	
+#gas_in_3 ul.position li input{
+	border: 1px solid blue;	
 }
 #gas_in_3 ul.position li img{
 	padding-right: 10px;
+	border: 1px solid red;
 }
 #gas_in_3 ul.position li span{
-	display: block;
 	font-size: 10px;
+	font-weight: bold;
 }
 #gas_in_4{
 	display: block;
 	margin-top: 20px;
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px dashed #c0c0c0;
 	padding-bottom: 20px;
 }
-#gas_in_4 ul.temperature{
-	margin-top: 10px;
-}
-#gas_in_4 ul.temperature  li span{
-	position: relative; 
-	-webkit-top: -4px;
-	top:-2px; /* 익스 및 크롬에서 적용되는데에 차이를 보임 */
-	font-size: 10px;
-}
-#middle_sidebar_container > #side_btn_container{
-	margin-top: 20px;
-	text-align: center;
-}
+
 /* 우측 상품리스트 영역 */
 #product_list_container{
-	overflow: hidden;
 	float: left;
 	margin-left: 40px;
+	border: 1px solid red;
 	width: 720px;
-	height: auto;
-}
-#product_list_container > p{
-	font-size: 13px;
-	float: left;
-	height: 23px;	
-}
-#product_list_container > p span.sch_cnt{
-	color: #f97b0b;
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 23px;
-}
-#product_list_container > ul.question_icon{
-	float: right;
-	width:  auto;
-	height: 23px;
-	margin-bottom: 10px;
-}
-#product_list_container > ul.question_icon li{
-	float: left;
-	line-height: 23px;
-	margin-left: 5px;
-	font-size: 11px;
-}
-#product_list_container > ul.question_icon li:nth-child(1) {
-	margin-right: 10px;	
-}
-#product_list_container > ul.question_icon li:nth-child(1) img{
-	vertical-align: middle;	
-}
-#product_list_container > ul.product_list{
-	clear: both;
-	padding-bottom: 10px;
-	border-top: 1px solid #c0c0c0;
-}
-#product_list_container > ul.product_list li.row_effect{
-	display: inline-block;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #c0c0c0;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols{
-	float: left;
-	width: 240px;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#check_btn {
-	margin-bottom: 15px;
-	height: 23px;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#check_btn .chk_text{
-	position: relative;
-	-webkit-top:-4px; 
-	top: -2px; 	/* 익스 및 크롬에서 적용되는데에 차이를 보임 */
-	font-size: 12px;
-	height: 23px;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_img {
-	width: 180px;
-	height: 150px;
-	text-align: center;
-	margin-bottom: 20px;
-	vertical-align: top;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info { 	
-	text-align: center;
-	font-size: 12px;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info ul.info_list {
-	width: auto;
-	height: 18px;
-	margin-top: 10px;
-	margin-bottom: 15px;
-	text-align: center;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info ul.info_list li {
-	display: inline;
-}
-#product_list_container > ul.product_list li.row_effect > ul.row li.cols > div#product_info .detailView_img {
-	clear: both;
-}
-#paging_container{
-	overflow: hidden;
-	margin: 0px auto;
-	height: 25px;
-	text-align: center;
-}
-#paging_container > ul.paging_list{
-	float: left;
-	width: 86%;
-	height: 20px;
-	text-align: center;
-	margin-left: 7%;
-}
-/* 클래스 nowPage에 대한 스타일 */
-#paging_container > ul.paging_list li.nowPage {
-	color: #f97b0b;
-}
-#paging_container > ul.paging_list li.boundary_left{
-	margin-right: 10px;
-}
-#paging_container > ul.paging_list li.boundary_right{
-	margin-left: 10px;
-}
-#paging_container > ul.paging_list li{
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 10px;
-	color: #929292;
-}
-#paging_container > ul.paging_list li img{
-	vertical-align: middle;
-}
-#paging_container > .totalPage{
-	float: right;
-	width: 7%;
-	font-size: 14px;
-	font-weight: bold;
-	color: #929292;
-}
-#paging_container .nowPage{
-	font-size: 14px;
-	color: #f97b0b;
+	height: 1047px;
 }

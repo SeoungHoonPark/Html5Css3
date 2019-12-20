@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	list-style:none;
+	box-sizing:border-box;
+	margin:0; padding:0;	
+}
+html{
+	width:100%;
+	overflow:hidden;	
+}
+body{
+	width:100%;
+	overflow:hidden;
+	font-size:12px;
+	color:#444;	
+}
+a{
+	text-decoration:none;
+	color:inherit;	
+}
+
+/*로고 영역*/
+@keyframes scale{
+	0% {transform:scale(0);}
+	100% {transform:scale(1);}
+}
+.logo{
+	position:fixed;
+	bottom:50px;
+	left:50px;
+	z-index:9999;
+	
+	transition:all 1s;
+	animation:scale 1s;
+	-ms- animation:scale 1s;
+	-moz- animation:scale 1s;
+	-o- animation:scale 1s;
+	-webkit- animation:scale 1s;
+}
+.logo img{
+	width:200px;
+	height:auto;	
+}
+
+/*메뉴 영역*/
+#floating_wrap{
+	position:fixed;
+	top:0;left:0;
+	z-index:9999;
+	color:#fff;
+}
+.menu_btn img{
+	width:50px;
+	height:50px;
+	margin-left:100px;
+	
+	transition:all 1s;
+}
+.login_list{
+	overflow:hidden;
+	width:150px;
+	
+}
+.login_list>li{
+	width:50%;
+	float:left;
+	font-size:14px;
+	padding:10px 0px;
+	text-align:center;
+	
+	transition:all .5s;
+}
+.login_list>li:hover{
+	text-decoration:overline;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+}
+.menu_list{
+	overflow:hidden;
+	width:150px;
+	background:rgba(0,0,0,0.5);
+}
+.menu_list>li{
+	width:100%;
+	display:inline-block;
+	padding:10px;
+	border-top:1px solid #444;	
+	
+	transition:all .5s;
+}
+.menu_list>li:hover{
+	text-decoration:underline;
+	background:rgba(255,255,255,0.5);
+	color:#000;
+	border-top:1px solid #00F;	
+}
+.menu_list>li.on{
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	background:rgba(255,255,255,0.5);
+	text-decoration: overline;
+	color:#000;
+	border-top:2px solid #FF0;
+}
+
+/* 세션 영역*/
+section{
+	width:100%;
+	overflow:hidden;	
+}
+section:nth-child(1){
+	background:url(../imgs/bg01.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+section:nth-child(2){
+	background:url(../imgs/bg02.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+section:nth-child(3){
+	background:url(../imgs/bg03.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+section:nth-child(4){
+	background:url(../imgs/bg04.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+section:nth-child(5){
+	background:url(../imgs/bg05.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+section:nth-child(6){
+	background:url(../imgs/bg01.jpg) no-repeat;
+	background-size:cover;
+	background-position:left;
+	background-attachment:fixed;	
+}
+article{
+	width:85%;
+	height:100%;
+	float:right;
+	overflow:auto;	
+}
+.clip_top{
+	width:100%;
+	padding:1vw;
+	transition:all 1s;
+}
+.top_title{
+	font-size:1vw;
+	color:#fff;
+	transition:all 1s;	
+}
+.title_point{
+	color:#F00;
+	background:rgba(255,255,255,0.5);	
+}
+.clip{
+	width:100%;
+	overflow:hidden;
+	margin-top:1vw;
+	transition:all 1s;
+}
+.main_wrap{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:1vw 0;
+	padding:2vw 0;
+	background:rgba(0,0,0,0.5);
+	transition:all 1s;
+}
+.main_slide{
+	position:relative;
+	width:1280px;
+	height:350px;
+	margin:0 auto;
+	overflow:hidden;	
+}
+.slide{
+	position:absolute;
+	top:0;left:0;
+	z-index:9995;	
+}
+.slide>li{
+	float:left;	
+}
+.slide_cmt{
+	position:absolute;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	color:#fff;	
+	font-size:1vw;
+	font-weight:bold;
+	line-height:300%;
+	padding:1vw 0;
+	transition:all 1s;
+}
+.float_right{
+	float:right;	
+}
+.float_left{
+	float:left;	
+}
+.bottom_wrap{
+	width:80%;
+	overflow:hidden;
+	margin: 1vw auto;
+	transition:all 1s;	
+}
+.responsive_zone{
+	margin-top:2vw;
+	width:49%;
+	overflow:hidden;
+	transition:all 1s;	
+	color:#fff;
+	font-weight:bold;
+	
+	background:rgba(0,0,0,0.5);
+}
+.head_wrap{
+	width:100%;
+	padding:1vw 0;	
+}
+.w_80{
+	width:80%;
+}
+.w_100{
+	width:100%;
+}
+.head_bbs{
+	text-align:center;
+	font-size:2vw;
+	float:left;
+	margin:1vw 0;
+	
+	transition:all 1s;	
+}
+.head_wrap a{
+	line-height:300%;	
+}
+.head_wrap a:hover{
+	text-decoration:underline;
+	background:rgba(0,0,0,0.5);	
+}
+.response_list{
+	clear:both;
+	width:100%;
+	overflow:hidden;
+	margin-top:1vw;
+	transition:all 1s;	
+}
+.response_list>li{
+	width:100%;
+	display:inherit;	
+	padding:10px;
+	border-top:1px solid #fff;
+	
+	transition:all .5s;
+}
+.response_list>li:hover{
+	background:rgba(255,255,255,0.5);
+	color:#000;
+	border-top:2px solid #ff0;
+}
+.photo_list{
+	clear:both;
+	width:100%;
+	overflow:hidden;
+	margin-top:1vw;
+	transition:all 1s;	
+}
+.photo_list>li{
+	width:20%;
+	float:left;
+	border:1px solid #fff;	
+}
+.photo_list>li:hover{
+	border:1px solid #ff0;
+	opacity:0.7;	
+}
+.photo_list>li img{
+	width:100%;
+	height:auto;	
+}
+.responsive_bbs{
+	width:100%;
+	overflow:hidden;
+	transition:all 1s;	
+	color:#fff;
+	font-weight:bold;
+	
+	background:rgba(0,0,0,0.5);
+}
+.responsive_bbs hr{
+	margin:5% 0;	
+}
+.responsive_bbs button{
+	width:100%;
+	padding:15px 0;	
+}
+
+/*이미지 모달 영역*/
+.modal{
+	display:none;
+	position:fixed;
+	top:0; left:0;
+	z-index:10000;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	color:#fff;
+	
+	transition:all 1s;
+	animation:scale 1s;
+	-ms- animation:scale 1s;
+	-moz- animation:scale 1s;
+	-o- animation:scale 1s;
+	-webkit- animation:scale 1s;		
+}
+.modal_contents{
+	display:block;
+	width:70%;
+	height:60%;
+	margin:5% auto;
+	overflow:hidden;	
+}
+.modal_caption{
+	width:70%;
+	margin:1% auto;
+	padding:10px;
+	text-align:center;
+	background:rgba(255,255,255,0.5);
+	color:#000;
+	font-weight:bold;	
+}
+.close{
+	margin:10px 0;
+	width:100%;
+	padding:10px;	
+}
+
+/* form 영역 */
+form{
+	width:70%;
+	margin: 5% auto;
+	color:#000;
+	
+	transition:all 1s;
+	animation:scale 1s;
+	-ms- animation:scale 1s;
+	-moz- animation:scale 1s;
+	-o- animation:scale 1s;
+	-webkit- animation:scale 1s;	
+}
+form .title{
+	text-align:center;	
+}
+form hr{
+	margin:5% 0;	
+}
+form input, textarea{
+	width:100%;
+	padding:15px;
+	margin:20px 0;	
+}
+form button{
+	width:50%;
+	float:left;
+	padding:10px;	
+}

@@ -5,7 +5,7 @@ a{text-decoration: none; color:black;font-weight: bold;}
 a:hover{color: green;}
 #body_container{width: 100%;height: 100%;}
 .list_style_1 li{
-	background-image: url("/201810/Kitchenwall/images/li_check.png");
+	background-image: url("../images/li_check.png");
 	background-repeat: no-repeat;
 	padding-left: 20px;
 }
@@ -45,7 +45,7 @@ a:hover{color: green;}
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
-	background-image: url("/201810/Kitchenwall/images/bg.png");
+	background-image: url("../images/bg.png");
 }
 #contents_container{
 	width: 100%;
@@ -446,7 +446,6 @@ a:hover{color: green;}
 	font-size:12px;
 }
 /* 여기까지 반복 */
-
 /* 푸터부분 적용 */
 #footer{
 	margin:0 auto;
